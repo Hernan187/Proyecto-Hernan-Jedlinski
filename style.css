@@ -251,3 +251,38 @@ padding: 10px;
     height: 70px;
     }
 
+    .fb {
+        transition: all;
+        transition-duration: 2s;
+    }
+    
+    .fb:hover{
+        transform: scale(2);
+    }
+    
+    .ig {
+        transition: all;
+        transition-duration: 2s;
+    }
+    
+    .ig:hover{
+        transform: scale(2);
+    }
+    
+    .tw {
+        transition: all;
+        transition-duration: 2s;
+    }
+    
+    .tw:hover{
+        transform: scale(2);
+    }
+    
+    .pn {
+        transition: all;
+        transition-duration: 2s;
+    }
+    
+    .pn:hover{
+        transform: scale(2);
+    }
