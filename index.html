@@ -10,6 +10,7 @@
 
     <link rel="shortcut icon" href="/logos/ink.png" type="image/x-icon">
     <title>tattoo4us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="style.css">
 
@@ -30,6 +31,7 @@
             
                 <div class="art" ><a class="arti" href="#Art"> Artistas</a> </div>
                 <div class="est"><a class="esti" href="#Style"> Estilos </a> </div>
+                <div class="story"><a class="story" href="history.html" target="_blank"> Historia </a> </div>
                 <div class="ins"><a class="insu" href="#Ins"> Insumos</a> </div>
                 <div class="con"><a class="conta" href="#Cnt"> Contacto</a> </div>
 
@@ -51,12 +53,44 @@
    <!-- carrusel de imagenes con Artistas y nombre -->
 
    <section class="artistas" id="Art">
-            <img class="uno" src="artistas/artista1.png" alt=" brandon ">
-            <!-- <p> Brandon Levis </p> -->
-            <img class="dos" src="artistas/artista2.png" alt=" Louis ">
-            <!-- <p> Louis Clapton </p> -->
-            <img class="tres" src="artistas/artista3.png" alt=" Tina ">
-            <!-- <p> Tina Jones</p> -->
+    <div id="carouselExampleDark" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/artistas/artista1.png" class="d-block w-100" alt="brandon">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Brandon Lopez</h5>
+              <p>Actualmente tatuando en Mexico.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/artistas/artista2.png" class="d-block w-100" alt="Johnny">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Johnny Myers</h5>
+              <p>Actualmente tatuando en Alabama.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/artistas/artista3.png" class="d-block w-100" alt="Tina">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tina Jones</h5>
+              <p>Actualmente tatuando en Canada.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
  </section>
 
 <!-- Fin carrusel -->
@@ -152,11 +186,12 @@
 <!-- fin Mapa -->
 
 <!-- Video de youtube -->
+<!-- 
 <section class="video">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MYn15yDBvxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</section>
+</section> -->
 <!-- Fin Video youtube -->
 
 
@@ -182,6 +217,6 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
